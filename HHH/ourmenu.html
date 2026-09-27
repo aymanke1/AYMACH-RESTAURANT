@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+</head>
+<header>
+    <nav>
+        <a style="color: #f5a30b;"href="index.html">Reception</a>
+        <a style="color: #f5a30b;"href="ourmenu.html">Our Menu</a>
+        <a style="color: #f5a30b;"href="ourquality.html">Our Quality</a>
+        <a style="color: #f5a30b;"href="#commander">Order Now</a>
+        <style>
+           .nav a {
+                font-family: 'Nunito', sans-serif;
+                font-weight:800 ;
+                font-size: 16px;
+                color: #000000;
+                line-height: 1.6;
+                letter-spacing: 0.2px;
+                padding: 8px;
+                background-color: #f5a30b;
+           }
+        </style>
+    </nav>
+</header>
+<body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Aymach</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f5f5f5;
+            color: #222;
+        }
+        header {
+            background-color: #f5a30b;
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+        }
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 8px;
+        }
+        header p {
+            font-size: 18px;
+        }
+        nav {
+            background-color: white;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 2px 8px #ccc;
+        }
+        nav a {
+            text-decoration: none;
+            color: #222;
+            font-weight: bold;
+            margin: 0 12px;
+        }
+        nav a:hover {
+            color: #f5a30b;
+        }
+        main {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+        .category {
+            margin-bottom: 50px;
+        }
+        .category h2 {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 25px;
+            color: #f5a30b;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px #ddd;
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background-color: #ddd;
+        }
+        .card-content {
+            padding: 18px;
+        }
+        .card h3 {
+            font-size: 21px;
+            margin-bottom: 8px;
+        }
+        .card p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 12px;
+        }
+        .price {
+            color: #f5a30b;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🍔 RESTAURANT AYMACH</h1>
+        <p>Fresh • Crispy • Delicious</p>
+    </header>
+    <nav>
+        <a href="#menus">Menus</a>
+        <a href="#burgers">Burgers</a>
+        <a href="#chicken">Chicken</a>
+        <a href="#wraps">Wraps</a>
+        <a href="#sides">Sides</a>
+        <a href="#drinks">Boissons</a>
+        <a href="#desserts">Desserts</a>
+    </nav>
+    <main>
+        <section class="category" id="menus">
+            <h2>🔥 NOS MENUS</h2>
+            <div class="products">
+                <div class="card">
+                    <img src="menu-classique.jpg" alt="Menu Classic">
+                    <div class="card-content">
+                        <h3>Menu Aymach Classic</h3>
+                        <p>Burger Classic + Frites + Boisson</p>
+                        <span class="price">45 DH</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="cheese-burger-boison.jpg" alt="Menu Cheese">
+                    <div class="card-content">
+                        <h3>Menu Aymach Cheese</h3>
+                        <p>Cheeseburger + Frites + Boisson</p>
+                        <span class="price">49 DH</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="chiken-burger-boison.jpg" alt="Menu Chicken">
+                    <div class="card-content">
+                        <h3>Menu Chicken</h3>
+                        <p>Chicken Burger + Frites + Boisson</p>
+                        <span class="price">47 DH</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="category" id="burgers">
+            <h2>🍔 BURGERS</h2>
+            <div class="products">
+                <div class="card">
+                    <img src="burger-steak-hache-salade.jpg" alt="Aymach Classic">
+                    <div class="card-content">
+                        <h3>Aymach Classic</h3>
+                        <p>Steak haché, salade, tomate et sauce maison.</p>
+                        <span class="price">30 DH</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="burger2-salad.jpg" alt="Aymach Cheese">
+                    <div class="card-content">
+                        <h3>Aymach Cheese</h3>
+                        <p>Steak haché, fromage, salade et sauce maison.</p>
+                        <span class="price">35 DH</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="burger3-double-cheese.jpg" alt="Aymach Double">
+                    <div class="card-content">
+                        <h3>Aymach Double</h3>
+                        <p>Double steak, double fromage et sauce spéciale.</p>
+                        <span class="price">45 DH</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="burger-poulet-croustillant.jpg" alt="Aymach Crispy">
+                    <div class="card-content">
+                        <h3>Aymach Crispy</h3>
+                        <p>Poulet croustillant, fromage, salade et sauce maison.</p>
+                        <span class="price">35 DH</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="burger-poulet-epice.jpg" alt="Aymach Spicy">
+                    <div class="card-content">
+                        <h3>Aymach Spicy</h3>
+                        <p>Poulet épicé, fromage, salade et sauce spicy.</p>
+                        <span class="price">38 DH</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="burger-royale.jpg" alt="Aymach Royal">
+                    <div class="card-content">
+                        <h3>Aymach Royal</h3>
+                        <p>Double steak, fromage, oignons et sauce spéciale.</p>
+                        <span class="price">50 DH</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="category" id="chicken">
+            <h2>🍗 CHICKEN</h2>
+            <div class="products">
+                <div class="card">
+                    <img src="tenders-de-poulet-croustillant.jpg" alt="Chicken Tenders">
+                    <div class="card-content">
+                        <h3>Chicken Tenders</h3>
+                        <p>Tenders de poulet croustillants.</p>
+                        <span class="price">30 DH</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="ailes-de-poulet-croustillantes.jpg" alt="Chicken Wings">
+                    <div class="card-content">
+                        <h3>Chicken Wings</h3>
+                        <p>Ailes de poulet croustillantes.</p>
+                        <span class="price">28 DH</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="nuggets-de-poulet.jpg" alt="Chicken Nuggets">
+                    <div class="card-content">
+                        <h3>Chicken Nuggets</h3>
+                        <p>Nuggets de poulet avec sauce.</p>
+                        <span class="price">25 DH</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="category" id="wraps">
+            <h2>🌯 WRAPS</h2>
+            <div class="products">
+                <div class="card">
+                    <img src="chicken-wrap.jpg" alt="Chicken Wrap">
+                    <div class="card-content">
+                        <h3>Chicken Wrap</h3>
+                        <p>Poulet croustillant, salade, tomate et sauce.</p>
+                        <span class="price">32 DH</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="spicy-wrap.jpg" alt="Spicy Wrap">
+                    <div class="card-content">
+                        <h3>Spicy Wrap</h3>
+                        <p>Poulet épicé, salade, fromage et sauce spicy.</p>
+                        <span class="price">35 DH</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="beef-wrap.jpg" alt="Beef Wrap">
+                    <div class="card-content">
+                        <h3>Beef Wrap</h3>
+                        <p>Viande hachée, fromage, salade et sauce maison.</p>
+                        <span class="price">37 DH</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="category" id="sides">
+            <h2>🍟 SIDES</h2>
+            <div class="products">
+                <div class="card">
+                    <img src="frites-classiques.jpg" alt="Frites">
+                    <div class="card-content">
+                        <h3>Frites Classiques</h3>
+                        <p>Frites croustillantes.</p>
+                        <span class="price">12 DH</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="cheesy-fries.jpg" alt="Cheesy Fries">
+                    <div class="card-content">
+                        <h3>Cheesy Fries</h3>
+                        <p>Frites avec sauce fromage.</p>
+                        <span class="price">18 DH</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="onion-rings.jpg" alt="Onion Rings">
+                    <div class="card-content">
+                        <h3>Onion Rings</h3>
+                        <p>Rondelles d'oignons croustillantes.</p>
+                        <span class="price">18 DH</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="category" id="drinks">
+            <h2>🥤 BOISSONS</h2>
+            <div class="products">
+                <div class="card">
+                    <img src="coca-cola.jpg" alt="Coca Cola">
+                    <div class="card-content">
+                        <h3>Coca-Cola</h3>
+                        <p>Boisson fraîche.</p>
+                        <span class="price">10 DH</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="sprite.jpg" alt="Sprite">
+                    <div class="card-content">
+                        <h3>Sprite</h3>
+                        <p>Boisson fraîche.</p>
+                        <span class="price">10 DH</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="jus-orange.jpg" alt="Jus Orange">
+                    <div class="card-content">
+                        <h3>Jus d'Orange</h3>
+                        <p>Jus d'orange frais.</p>
+                        <span class="price">15 DH</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="category" id="desserts">
+            <h2>🍦 DESSERTS</h2>
+            <div class="products">
+                <div class="card">
+                    <img src="aymach-sundae.jpg" alt="Sundae">
+                    <div class="card-content">
+                        <h3>Aymach Sundae</h3>
+                        <p>Glace vanille avec sauce chocolat ou caramel.</p>
+                        <span class="price">18 DH</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="cookie.jpg" alt="Cookie">
+                    <div class="card-content">
+                        <h3>Aymach Cookie</h3>
+                        <p>Cookie aux pépites de chocolat.</p>
+                        <span class="price">12 DH</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="milk-shake.jpg" alt="Milkshake">
+                    <div class="card-content">
+                        <h3>Aymach Milkshake</h3>
+                        <p>Milkshake disponible en plusieurs parfums.</p>
+                        <span class="price">22 DH</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+</body>
+</html>
